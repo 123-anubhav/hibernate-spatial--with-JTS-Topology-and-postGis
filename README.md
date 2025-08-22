@@ -1,6 +1,16 @@
 # hibernate-spatial--with-JTS-Topology-and-postGis
 hibernate-spatial -with-JTS Topology and postGis with kafkastream and mqtt using boot -iot project
 
+[
+some commands 
+ $ mosquitto_sub -h localhost -t "vts.location"
+ 
+$  kafka-topics --list --bootstrap-server localhost:9092
+
+$ kafka-topics --create   --topic vts.alerts   --bootstrap-server loca
+lhost:9092   --partitions 1   --replication-factor 1
+
+]
 ![postGisWithHibernateSpatialAndGeographicLocation](./screehshot%20notes%20steps.png)
 
 To enable **PostGIS** in your PostgreSQL database, follow these steps — whether you're on Windows, Linux, or using pgAdmin. This will unlock spatial capabilities for your VTS platform like geofencing, location tracking, and spatial queries.
